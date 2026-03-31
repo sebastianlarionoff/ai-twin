@@ -1,16 +1,19 @@
-// This is the layout file for the app.
-// Add your layout components here.
+import type { Metadata } from "next";
+import "./globals.css";
 
-export default function Layout({ children }) {
-    return (
-        <div>
-            <header>
-                <h1>My App</h1>
-            </header>
-            <main>{children}</main>
-            <footer>
-                <p>Footer content here</p>
-            </footer>
-        </div>
-    );
+export const metadata: Metadata = {
+  title: "Sebastian Larionov — AI Assistant",
+  description: "Ask me anything about Sebastian's experience, skills, and career",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }
