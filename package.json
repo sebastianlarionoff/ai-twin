@@ -1,0 +1,1 @@
+{\n  "name": "ai-twin",\n  "version": "1.0.0",\n  "dependencies": {\n    "next": "latest",\n    "@anthropic/sdk": "latest"\n  }\n}
